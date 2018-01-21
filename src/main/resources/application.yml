@@ -1,0 +1,32 @@
+spring:
+  freemarker:
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost/bbstar?characterEncoding=utf-8
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    static-path-pattern: /static/**
+server:
+  port: 8080
+banner:
+  location: banner.txt
+site:
+  name: 星宝日记
+  baseUrl: www.xingbaoriji.com
+  pageSize: 20
+  avatarPath: /root/tools/static/images/avatar/
+  uploadPath: /root/tools/static/images/upload/
+  sections:
+    - 分享
+    - 问答
+    - 新闻
+    - 博客
+    - 招聘
+  theme: bootstrap
+  editor: markdown # 支持两种，1. markdown 2. wangeditor
